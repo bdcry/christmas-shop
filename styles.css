@@ -88,7 +88,7 @@ a {
 /* Hero Styles */
 
 .hero {
-  background-image: url(./assets/images/HeroSection.png);
+  background-image: url('assets/images/HeroSection.png');
   min-height: 524px;
   color: white;
   display: flex;
@@ -124,7 +124,7 @@ h1 {
 
 /* About Styles  */
 .about {
-  background-image: url(./assets/images/AboutSection.png);
+  background-image: url('assets/images/AboutSection.png');
   padding: 60px 82px;
 }
 
@@ -159,38 +159,4 @@ h1 {
 
 
 /* Test Footer Styles (need to rewrite it, made it only for a example) */
-.footer {
-  background-color: #333;
-  color: white;
-  padding: 20px 40px;
-  text-align: center;
-}
 
-.footer_container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.footer_links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.footer_link {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.footer_link:hover {
-  color: #f4c242;
-}
-
-.footer_text {
-  font-size: 14px;
-  opacity: 0.7;
-}
