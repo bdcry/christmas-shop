@@ -88,7 +88,7 @@ a {
 /* Hero Styles */
 
 .hero {
-  background-image: url(/assets/images/HeroSection.png);
+  background-image: url(./assets/images/HeroSection.png);
   min-height: 524px;
   color: white;
   display: flex;
@@ -124,7 +124,7 @@ h1 {
 
 /* About Styles  */
 .about {
-  background-image: url(/assets/images/AboutSection.png);
+  background-image: url(./assets/images/AboutSection.png);
   padding: 60px 82px;
 }
 
