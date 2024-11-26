@@ -107,6 +107,7 @@ header a {
   display: flex;
   flex-direction: row;
   padding: 12px 20px;
+  transition: all .5s ease;
 }
 
 /* Hero Styles */
@@ -137,6 +138,7 @@ h1 {
   background-color: #181c29;
   color: white;
   text-decoration: none;
+  transition: all .5s ease;
 }
 
 .hero_button:hover {
@@ -180,8 +182,12 @@ h1 {
 }
 
 /* Footer Styles */
+.footer {
+  height: 496px;
+}
+
 .footer_container {
-  padding: 60px 0;
+  padding-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,6 +217,7 @@ h1 {
   flex-direction: column;
   padding: 20px 0;
   gap: 12px;
+  transition: all .5s ease;
 }
 
 .footer_h3 {
@@ -235,9 +242,30 @@ h1 {
   gap: 12px;
 }
 
+.footer_icon {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: stroke .5s ease;
+}
+
+.footer_icon svg path {
+  transition: stroke .5s ease;
+}
+
+.footer_icon:hover svg path {
+  stroke: #FF4646;
+}
+
 .footer_socials a {
   text-decoration: none;
   color: black;
+}
+
+.footer_socials a span {
+  transition: all .5s ease;
 }
 
 .footer_socials a span:hover {
