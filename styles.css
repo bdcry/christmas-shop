@@ -13,6 +13,15 @@ body {
   text-transform: uppercase;
 }
 
+.action_large {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  line-height:  152%;
+  letter-spacing:  3.84px;
+  text-transform: uppercase;
+}
+
 .font_caption {
   font-family: "Allura";
   font-size: 24px;
@@ -37,7 +46,15 @@ body {
   line-height: 152%;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  margin: 0;
+}
+
+.font_h3 {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 152%;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
 }
 
 .font_p {
@@ -45,6 +62,13 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height:  148%;
+}
+
+p {
+  margin: 0;
+}
+
+h1 h2 h3 {
   margin: 0;
 }
 
@@ -62,7 +86,7 @@ header {
   gap: 8px;
 }
 
-a {
+header a {
   text-decoration: none;
   color: black;
 }
@@ -86,7 +110,6 @@ a {
 }
 
 /* Hero Styles */
-
 .hero {
   background-image: url('assets/images/HeroSection.png');
   min-height: 524px;
@@ -98,7 +121,6 @@ a {
 
 .hero_container {
   width: 430px;
-  /* padding: 60px 0; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,7 +129,6 @@ a {
 
 h1 {
   text-align: center;
-  margin: 0;
 }
 
 .hero_button {
@@ -115,6 +136,7 @@ h1 {
   border-radius: 20px;
   background-color: #181c29;
   color: white;
+  text-decoration: none;
 }
 
 .hero_button:hover {
@@ -157,6 +179,67 @@ h1 {
   border-radius: 20px;
 }
 
+/* Footer Styles */
+.footer_container {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-/* Test Footer Styles (need to rewrite it, made it only for a example) */
+.footer_contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
 
+.footer_card {
+  background-color: #ECF3F8;
+  width: 417px;
+  height: 204px;
+  border-radius: 20px;
+}
+
+.footer_card a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
+  gap: 12px;
+}
+
+.footer_h3 {
+  margin: 0;
+}
+
+.footer_card a:hover{
+  color: #ff4646;
+}
+
+.footer_socials {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer_icons {
+  display: flex;
+  gap: 12px;
+}
+
+.footer_socials a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer_socials a span:hover {
+  color: #ff4646;
+}
