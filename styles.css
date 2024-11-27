@@ -238,7 +238,6 @@ h1 {
   width: 90%;
   gap: 20px;
 }
-
 .active_button rect {
   transition: all .5s ease;
   stroke-opacity: 1;
@@ -326,6 +325,75 @@ h1 {
 
 .pink {
   color: #FF43F7;
+}
+
+/* CTA Styles */
+.cta {
+  background-image: url('./assets/images/CTASection.png');
+  padding-top: 180px;
+  padding-bottom: 159px;
+  height: 668px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.cta_container {
+  width: 426px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.cta_button {
+  padding: 20px 32px;
+  border-radius: 20px;
+  background-color: #181c29;
+  color: white;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+
+.cta_button:hover {
+  color: black;
+  background-color: white;
+}
+
+.cta_timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.timer_container {
+  width: 344px;
+  height: 72px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  padding: 8px 12px;
+}
+
+.timer_cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  width: 80px;
+}
+
+.separator {
+  width: 1px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 /* Footer Styles */
