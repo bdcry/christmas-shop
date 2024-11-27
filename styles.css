@@ -61,6 +61,15 @@ body {
   text-transform: uppercase;
 }
 
+.font_h4 {
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
 .font_p {
   font-family: "Montserrat";
   font-size: 16px;
@@ -72,7 +81,7 @@ p {
   margin: 0;
 }
 
-h1, h2,  h3 {
+h1, h2, h3, h4 {
   margin: 0;
 }
 
@@ -207,13 +216,6 @@ h1 {
   gap: 12px;
 }
 
-.slider_text {
-  font-family: "Montserrat";
-  font-size: 80px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
 .slider_row {
   display: flex;
   flex-direction: row;
@@ -221,6 +223,13 @@ h1 {
   align-items: center;
   gap: 20px;
   width: 100%;
+}
+
+.slider_text {
+  font-family: "Montserrat";
+  font-size: 80px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .slider_buttons {
@@ -246,6 +255,77 @@ h1 {
 
 .active_button:hover path {
   stroke: #FF4646;
+}
+
+/* Best Styles */
+.best {
+  background-image: url('./assets/images/BestGiftsSection.png');
+  color: white;
+  padding: 60px 0;
+}
+
+.best_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.best_header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 12px;
+}
+
+.best_cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.best_card {
+  background-color: #ecf3f8;
+  border-radius: 20px;
+  color: black;
+  height: 342px;
+  width: 310px;
+  text-align: left;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.best_card_header {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  height: 72px;
+}
+
+.best_card .font_h3 {
+  transition: color 0.5s ease;
+}
+
+.best_card:hover .font_h3 {
+  color: #FF4646;
+}
+
+.blue {
+  color: #4361FF;
+}
+
+.green {
+  color: #06A44F;
+}
+
+.pink {
+  color: #FF43F7;
 }
 
 /* Footer Styles */
