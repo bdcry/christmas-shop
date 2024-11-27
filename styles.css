@@ -44,7 +44,7 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 152%;
-  letter-spacing: 1.2px;
+  letter-spacing: 3.84px;
   text-transform: uppercase;
 }
 
@@ -68,7 +68,7 @@ p {
   margin: 0;
 }
 
-h1 h2 h3 {
+h1, h2,  h3 {
   margin: 0;
 }
 
@@ -179,6 +179,69 @@ h1 {
 
 .about_image img {
   border-radius: 20px;
+}
+
+/* Slider Styles */
+.slider {
+  background-image: url('./assets/images/SliderSection.png');
+  padding: 60px 0;
+  color: white;
+}
+
+.slider_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.slider_header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.slider_text {
+  font-family: "Montserrat";
+  font-size: 80px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.slider_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.slider_buttons {
+  display: flex;
+  justify-content: end;
+  width: 90%;
+  gap: 20px;
+}
+
+.active_button rect {
+  transition: all .5s ease;
+  stroke-opacity: 1;
+}
+
+.active_button path {
+  transition: all .5s ease;
+  stroke-opacity: 1;
+}
+
+.active_button:hover {
+  fill: white;
+}
+
+.active_button:hover path {
+  stroke: #FF4646;
 }
 
 /* Footer Styles */
