@@ -7,84 +7,6 @@ body {
   margin: auto;
 }
 
-/* Text styles */
-.action_small {
-  font-family: "Montserrat";
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 130%;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-}
-
-.action_large {
-  font-family: "Montserrat";
-  font-size: 24px;
-  font-weight: 600;
-  line-height:  152%;
-  letter-spacing:  3.84px;
-  text-transform: uppercase;
-}
-
-.font_caption {
-  font-family: "Allura";
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: 1.2px;
-}
-
-.font_h1 {
-  font-family: "Montserrat";
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 150%;
-  letter-spacing: 5.86px;
-  text-transform: uppercase;
-}
-
-.font_h2 {
-  font-family: "Montserrat";
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 152%;
-  letter-spacing: 3.84px;
-  text-transform: uppercase;
-}
-
-.font_h3 {
-  font-family: "Montserrat";
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 152%;
-  letter-spacing: 1.28px;
-  text-transform: uppercase;
-}
-
-.font_h4 {
-  font-family: "Montserrat";
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 130%;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-}
-
-.font_p {
-  font-family: "Montserrat";
-  font-size: 16px;
-  font-weight: 400;
-  line-height:  148%;
-}
-
-p {
-  margin: 0;
-}
-
-h1, h2, h3, h4 {
-  margin: 0;
-}
-
 /* Header Styles */
 header {
   display: flex;
@@ -126,7 +48,7 @@ header a {
 
 /* Hero Styles */
 .hero {
-  background-image: url('assets/images/HeroSection.png');
+  background-image: url('/assets/images/HeroSection.png');
   min-height: 524px;
   color: white;
   display: flex;
@@ -163,7 +85,7 @@ h1 {
 
 /* About Styles  */
 .about {
-  background-image: url('assets/images/AboutSection.png');
+  background-image: url('/assets/images/AboutSection.png');
   padding: 60px 82px;
 }
 
@@ -198,7 +120,7 @@ h1 {
 
 /* Slider Styles */
 .slider {
-  background-image: url('./assets/images/SliderSection.png');
+  background-image: url('/assets/images/SliderSection.png');
   padding: 60px 0;
   color: white;
 }
@@ -260,7 +182,7 @@ h1 {
 
 /* Best Styles */
 .best {
-  background-image: url('./assets/images/BestGiftsSection.png');
+  background-image: url('/assets/images/BestGiftsSection.png');
   color: white;
   padding: 60px 0;
 }
@@ -331,7 +253,7 @@ h1 {
 
 /* CTA Styles */
 .cta {
-  background-image: url('./assets/images/CTASection.png');
+  background-image: url('/assets/images/CTASection.png');
   padding-top: 180px;
   padding-bottom: 159px;
   height: 668px;
