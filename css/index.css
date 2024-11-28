@@ -48,7 +48,7 @@ header a {
 
 /* Hero Styles */
 .hero {
-  background-image: url('/assets/images/HeroSection.png');
+  background-image: url('../assets/images/HeroSection.png');
   min-height: 524px;
   color: white;
   display: flex;
@@ -85,7 +85,7 @@ h1 {
 
 /* About Styles  */
 .about {
-  background-image: url('/assets/images/AboutSection.png');
+  background-image: url('../assets/images/AboutSection.png');
   padding: 60px 82px;
 }
 
@@ -120,7 +120,7 @@ h1 {
 
 /* Slider Styles */
 .slider {
-  background-image: url('/assets/images/SliderSection.png');
+  background-image: url('../assets/images/SliderSection.png');
   padding: 60px 0;
   color: white;
 }
@@ -182,7 +182,7 @@ h1 {
 
 /* Best Styles */
 .best {
-  background-image: url('/assets/images/BestGiftsSection.png');
+  background-image: url('../assets/images/BestGiftsSection.png');
   color: white;
   padding: 60px 0;
 }
@@ -253,7 +253,7 @@ h1 {
 
 /* CTA Styles */
 .cta {
-  background-image: url('/assets/images/CTASection.png');
+  background-image: url('../assets/images/CTASection.png');
   padding-top: 180px;
   padding-bottom: 159px;
   height: 668px;
