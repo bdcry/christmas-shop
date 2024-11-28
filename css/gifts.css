@@ -82,12 +82,13 @@ h1 {
   text-align: left;
   transition: all .5s ease;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .gift_card_header {
   background-color: white;
   border-radius: 20px;
-  padding: 15px 20px;
+  padding: 17px 20px;
   display: flex;
   gap: 10px;
   flex-direction: column;
