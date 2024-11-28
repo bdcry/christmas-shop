@@ -10,7 +10,7 @@ body {
 main {
   background-color: #FF4646;
   border-radius: 20px;
-  background-image: url('../assets/images/bg-garland.png');
+  background-image: url('/assets/images/bg-garland.png');
   background-repeat: repeat-x;
 }
 
@@ -101,4 +101,18 @@ h1 {
 
 .gift_card:hover .font_h3 {
   color: #FF4646;
+}
+
+@media (max-width: 768px) {
+  .gifts_cards {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gifts_cards {
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+  }
 }
