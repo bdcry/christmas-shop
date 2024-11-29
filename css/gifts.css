@@ -10,7 +10,7 @@ body {
 main {
   background-color: #FF4646;
   border-radius: 20px;
-  background-image: url('/assets/images/bg-garland.png');
+  background-image: url('./assets/images/bg-garland.png');
   background-repeat: repeat-x;
 }
 
