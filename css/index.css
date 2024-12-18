@@ -564,6 +564,8 @@ h1 {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     min-height: 572px;
+    background-color: #FF4646;
+    background-repeat: no-repeat;
   }
 
   /* About section */

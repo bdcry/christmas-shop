@@ -12,8 +12,9 @@ main {
   border-radius: 20px;
   background-image: url('../assets/images/bg-garland.png');
   background-repeat: repeat-x;
+  background-position: top center;
+  background-size: 100% auto;
 }
-
 
 /* Header Styles */
 .active_gift_btn {
@@ -68,8 +69,8 @@ h1 {
 
 .gifts_cards {
   display: grid;
-  grid-template-columns: 310px 310px 310px 310px;
-  grid-template-rows: 342px 342px 342px;
+  grid-template-columns: repeat(4, 310px);
+  grid-template-rows: repeat(3, 342px);
   grid-gap: 12px;
 }
 
@@ -103,16 +104,60 @@ h1 {
   color: #FF4646;
 }
 
-@media (max-width: 768px) {
+@media (width >= 768px) and (width < 1440px ) {
   .gifts_cards {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 8px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12px;
   }
 }
 
-@media (max-width: 480px) {
+@media (width >= 380px) and (width < 768px ) {
+  /* Gifts Section */
+  h1 {
+    width: 364px;
+  }
+
+  /* Tabs */
+  .tabs {
+    width: 354px;
+    height: 40px;
+  }
+
+  .tabs .tab:nth-child(1) p {
+    width: 25px;
+    height: 16px;
+  }
+
+  .tabs .tab:nth-child(2) p {
+    width: 76px;
+    height: 16px;
+  }
+
+  .tabs .tab:nth-child(3) p {
+    width: 86px;
+    height: 16px;
+  }
+
+  .tabs .tab:nth-child(4) p {
+    width: 103px;
+    height: 16px;
+  }
+
+  .active_filter_btn {
+    padding: 12px 8px;
+  }
+
+  .filter_btn {
+    padding: 12px 3px;
+  }
+
   .gifts_cards {
     grid-template-columns: 1fr;
-    grid-gap: 8px;
+    grid-gap: 12px;
+  }
+
+  /* Footer Section */
+  .footer_container {
+    padding-top: 60px
   }
 }
