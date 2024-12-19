@@ -81,9 +81,15 @@
               src="./assets/images/christmas-tree-ball.png"
               alt="Christmas Tree Ball"
             />
+            <p class="slider_text">Dream</p>
+            <img
+              src="./assets/images/fairytale-house.png"
+              alt="Fairytale House"
+            />
           </div>
           <div class="slider_buttons">
             <svg
+              class="prev_btn"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               width="56"
@@ -109,7 +115,7 @@
               ></path>
             </svg>
             <svg
-              class="active_button"
+              class="next_btn active_button"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               width="56"
@@ -203,22 +209,22 @@
             <p class="font_caption">The New Year is Coming Soon...</p>
             <div class="timer_container">
               <div class="timer_cell">
-                <h2 class="font_h2">47</h2>
+                <h2 class="font_h2" id="days">0</h2>
                 <h4 class="font_h4">days</h4>
               </div>
               <div class="separator"></div>
               <div class="timer_cell">
-                <h2 class="font_h2">5</h2>
+                <h2 class="font_h2" id="hours">0</h2>
                 <h4 class="font_h4">hours</h4>
               </div>
               <div class="separator"></div>
               <div class="timer_cell">
-                <h2 class="font_h2">34</h2>
+                <h2 class="font_h2" id="minutes">0</h2>
                 <h4 class="font_h4">minutes</h4>
               </div>
               <div class="separator"></div>
               <div class="timer_cell">
-                <h2 class="font_h2">12</h2>
+                <h2 class="font_h2" id="seconds">0</h2>
                 <h4 class="font_h4">seconds</h4>
               </div>
             </div>
@@ -360,5 +366,6 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="init.js"></script>
   </body>
 </html>
