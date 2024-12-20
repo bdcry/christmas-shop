@@ -111,6 +111,7 @@ h1 {
   bottom: 8px;
   display: none;
   z-index: 1000;
+  transition: all .5s ease;
 }
 
 .show {

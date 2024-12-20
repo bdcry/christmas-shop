@@ -1,14 +1,14 @@
 export const initSlider = () => {
-  const sliderContainer = document.querySelector('.slider_container');
+  const sliderWrapper = document.querySelector('.slider_wrapper');
   const sliderRow = document.querySelector('.slider_row');
 
   const nextBtn = document.querySelector('.next_btn');
   const prevBtn = document.querySelector('.prev_btn');
 
   let currentStep = 0;
-  let fullSliderWidth = sliderContainer.scrollWidth;
-  let visibleAreaOfSlider = sliderRow.offsetWidth;
-  let counterClicks = visibleAreaOfSlider >= 768 ? 3 : 6;
+  let visibleAreaOfSlider = sliderWrapper.offsetWidth;
+  let fullSliderWidth = sliderRow.scrollWidth;
+  let counterClicks = visibleAreaOfSlider >= 752 ? 3 : 6;
   let stepSize = (fullSliderWidth - visibleAreaOfSlider) / counterClicks;
 
   const resetSlider = () => {
@@ -18,11 +18,11 @@ export const initSlider = () => {
   };
 
   const recalculateValues = () => {
-    resetSlider();
-    fullSliderWidth = sliderContainer.scrollWidth;
-    visibleAreaOfSlider = sliderRow.offsetWidth;
-    counterClicks = visibleAreaOfSlider >= 768 ? 3 : 6;
+    fullSliderWidth = sliderRow.scrollWidth;
+    visibleAreaOfSlider = sliderWrapper.offsetWidth;
+    counterClicks = visibleAreaOfSlider >= 752 ? 3 : 6;
     stepSize = (fullSliderWidth - visibleAreaOfSlider) / counterClicks;
+    resetSlider();
   };
 
   const updateButtonStates = () => {
@@ -53,5 +53,5 @@ export const initSlider = () => {
     }
   });
 
-  window.addEventListener('resize', () => recalculateValues());
+  window.addEventListener('resize', recalculateValues);
 };
