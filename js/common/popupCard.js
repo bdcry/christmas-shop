@@ -93,8 +93,8 @@ export const initGiftModal = () => {
 
       modalStats.appendChild(statContainer);
     });
-    disableScroll();
     modal.showModal();
+    disableScroll();
   };
 
   const closeModal = () => {
