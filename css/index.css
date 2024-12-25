@@ -25,6 +25,7 @@ header {
 header a {
   text-decoration: none;
   color: black;
+  z-index: 2;
 }
 
 .header_nav {
@@ -35,6 +36,40 @@ header a {
 
 .header_burger {
   display: none;
+}
+
+.popup_burger_menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s ease;
+}
+
+.popup_burger_menu.active {
+  right: 0;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header_burger.active .top-line {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.header_burger.active .bottom-line {
+  transform: translateY(-4px) rotate(-45deg);
 }
 
 .nav_item:hover {
@@ -164,7 +199,6 @@ h1 {
   width: 100%;
   transition: transform .5s ease;
 }
-
 
 .slider_row img {
   border-radius: 20px;
@@ -525,6 +559,7 @@ h1 {
     width: 20px;
     background-color: #181C29;
     transition: all 0.5s ease;
+    z-index: 2;
   }
 
   .bar:hover {
@@ -564,6 +599,7 @@ h1 {
     width: 20px;
     background-color: #181C29;
     transition: all 0.5s ease;
+    z-index: 2;
   }
 
   .bar:hover {

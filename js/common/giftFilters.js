@@ -19,7 +19,6 @@ const initGiftFilters = () => {
   const tabs = document.querySelectorAll('.filter_btn');
   const cards = document.querySelectorAll('.gift_card');
 
-
   tabs.forEach((tab) => {
     tab.addEventListener('click', () => handleTabClick(tabs, tab, cards));
   });
