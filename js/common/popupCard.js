@@ -81,8 +81,8 @@ export const initGiftModal = () => {
 
         star.src =
           i < power.stars
-            ? './../../assets/icons/Modal/snowflake_red.svg'
-            : './../../assets/icons/Modal/snowflake_grey.svg';
+            ? './assets/icons/Modal/snowflake_red.svg'
+            : './assets/icons/Modal/snowflake_grey.svg';
         star.alt = i < power.stars ? 'Red start' : 'Grey Star';
         starsContainer.appendChild(star);
       }
