@@ -78,6 +78,7 @@ h1, h2, h3, h4 {
 
 button {
   all: unset;
+  cursor: pointer;
 }
 
 body {
@@ -85,5 +86,6 @@ body {
 }
 
 html {
-  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+  overscroll-behavior-y: none;
 }
