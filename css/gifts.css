@@ -72,6 +72,7 @@ h1 {
   grid-template-columns: repeat(4, 310px);
   grid-template-rows: repeat(3, 342px);
   grid-gap: 12px;
+  transition: all 1s ease;
 }
 
 .gift_card {
@@ -81,9 +82,20 @@ h1 {
   height: 342px;
   width: 310px;
   text-align: left;
-  transition: all .5s ease;
   cursor: pointer;
   box-sizing: border-box;
+  transition: transform 1s ease; /* Анимация появления */
+}
+
+.filter_category_active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.filter_category_disable {
+  opacity: 0;
+  transform: scale(0.5);
+  position: absolute;
 }
 
 .gift_card_header {
