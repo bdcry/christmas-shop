@@ -118,6 +118,80 @@ h1 {
   display: block;
 }
 
+/* Popup Card */
+.dialog {
+  min-width: 364px;
+  height: 514px;
+  border-radius: 20px;
+  border: none;
+  padding: 0;
+  background-color: #ecf3f8;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.modal-close {
+  padding: 12px;
+  position: absolute;
+  right: 0;
+}
+
+.dialog_inner {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 514px;
+}
+
+.description {
+  height: 284px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.description_container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.description_container_superpowers {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 120px;
+}
+
+.stat_container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+
+.stat_container .first_p {
+  width: 50%;
+}
+
+.stars_container {
+  display: flex;
+  gap: 8px;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
 @media (width >= 768px) and (width < 1440px ) {
   .gifts_cards {
     grid-template-columns: repeat(2, 1fr);

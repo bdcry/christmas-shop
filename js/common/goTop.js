@@ -1,6 +1,5 @@
 export const goTop = () => {
   const goTopBtn = document.getElementById('go-top-btn');
-  console.log(goTopBtn);
 
   const scrollFunction = () => {
     if (document.documentElement.scrollTop > 64 && window.innerWidth <= 768) {

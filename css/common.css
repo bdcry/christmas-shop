@@ -79,3 +79,11 @@ h1, h2, h3, h4 {
 button {
   all: unset;
 }
+
+body {
+  scrollbar-gutter: stable;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
