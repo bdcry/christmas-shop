@@ -8,7 +8,7 @@ const initBurgerMenu = () => {
   burgerButton.addEventListener('click', () => {
     burgerPopup.classList.toggle('active');
     burgerMenu.classList.toggle('active');
-    body.classList.add('noscroll');
+    body.classList.toggle('noscroll');
   });
 
   menuLinks.forEach((menuLink) => {

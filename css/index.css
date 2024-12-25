@@ -39,15 +39,15 @@ header a {
 }
 
 .popup_burger_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   right: -100%;
   width: 100vw;
   height: 100vh;
   background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: right 0.3s ease;
 }
 
@@ -56,12 +56,14 @@ header a {
 }
 
 .navigation {
+  margin: 0;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 8px;
+  padding: 20px;
 }
 
 .header_burger.active .top-line {
