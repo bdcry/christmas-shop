@@ -81,8 +81,8 @@ export const initGiftModal = () => {
 
         star.src =
           i < power.stars
-            ? '../../assets/icons/Modal/snowflake_red.svg'
-            : '../../assets/icons/Modal/snowflake_grey.svg';
+            ? './../../assets/icons/Modal/snowflake_red.svg'
+            : './../../assets/icons/Modal/snowflake_grey.svg';
         star.alt = i < power.stars ? 'Red start' : 'Grey Star';
         starsContainer.appendChild(star);
       }
@@ -102,6 +102,12 @@ export const initGiftModal = () => {
     enableScroll();
   };
 
+  const handleEscape = (event) => {
+    if (event.key === 'Escape') {
+      closeModal();
+    }
+  }
+
   cards.forEach((card) => {
     card.addEventListener('click', () => {
       openModal(card);
@@ -109,11 +115,7 @@ export const initGiftModal = () => {
   });
 
   closeModalBtn.addEventListener('click', closeModal);
-  modal.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') {
-      closeModal();
-    }
-  });
+  modal.addEventListener('keydown', handleEscape);  
 
   modal.addEventListener('click', (event) => {
     if (event.target === modal) {
