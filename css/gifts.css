@@ -126,11 +126,13 @@ h1 {
   border: none;
   padding: 0;
   background-color: #ecf3f8;
+  z-index: 1002;
 }
 
 dialog::backdrop {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
+  z-index: 1001;
 }
 
 .modal-close {
